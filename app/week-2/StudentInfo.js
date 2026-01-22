@@ -5,7 +5,7 @@ export default function StundentInfo(){
         <div>
             <p>Name - Manpreet Singh</p>
             <p>
-                <Link href ="https://github.com/Manpreet445/cprg306-assignments">Manprert Singh Github</Link>
+              Github - <Link href="https://github.com/Manpreet445/cprg306-assignments" style={{ textDecoration: 'underline' }}>manpreet/cprg306-assignments</Link>
             </p>
         </div>
     );
