@@ -32,7 +32,7 @@ export default function NewItem() {
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 rounded-full bg-slate-800 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="w-full p-2 rounded-full bg-slate-800 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-white-500 focus:outline-none transition"
         />
       </div>
  
@@ -45,13 +45,13 @@ export default function NewItem() {
           required
           value={quantity}
           onChange={(e) => setQuantity(Number(e.target.value))}
-          className="w-24 p-2 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="w-24 p-2 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-white-500 focus:outline-none transition"
         />
  
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="flex-1 p-3 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="flex-1 p-3 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-white-500 focus:outline-none transition"
         >
           <option value="produce">Produce</option>
           <option value="dairy">Dairy</option>
