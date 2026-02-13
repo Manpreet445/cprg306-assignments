@@ -20,7 +20,7 @@ export default function NewItem() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-6 m-4 bg-slate-900 text-white max-w-sm w-full rounded-xl shadow-2xl border border-slate-700"
+      className="p-6 m-4 bg-slate-black text-white max-w-sm w-full rounded-xl shadow-2xl border border-slate-700"
     >
       <h2 className="text-xl font-bold mb-4 text-center">Add New Item</h2>
      
@@ -32,7 +32,7 @@ export default function NewItem() {
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="w-full p-2 rounded-full bg-slate-800 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
         />
       </div>
  
@@ -45,13 +45,13 @@ export default function NewItem() {
           required
           value={quantity}
           onChange={(e) => setQuantity(Number(e.target.value))}
-          className="w-24 p-2 rounded-lg bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="w-24 p-2 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
         />
  
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="flex-1 p-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          className="flex-1 p-3 rounded-full bg-slate-800 border border-slate-600 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
         >
           <option value="produce">Produce</option>
           <option value="dairy">Dairy</option>
@@ -68,12 +68,12 @@ export default function NewItem() {
       </div>
  
       {/* Submit Button */}
-      <button
-        type="submit"
-        className="w-full mt-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 text-xl"
-      >
-        +
-      </button>
+    <button
+    type="submit"
+    className="w-full mt-6 py-3 bg-white hover:bg-gray-200 text-black font-bold rounded-full shadow-lg active:scale-95 transition-all duration-200 text-xl"
+    >
+    +
+    </button>
     </form>
   );
 }
