@@ -14,7 +14,6 @@ export default function ItemList({ items }) {
     return 0;
   });
 
-  // Strict high contrast styles
   const activeStyle = "bg-white text-black border-2 border-white";
   const inactiveStyle = "bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-colors";
 

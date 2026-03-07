@@ -5,6 +5,7 @@ import Item from "./item";
 export default function ItemList({ items }) {
   const [sortBy, setSortBy] = useState("name");
 
+  // Big W using the spread operator here to avoid mutating props
   const sortedItems = [...items].sort((a, b) => {
     if (sortBy === "name") {
       return a.name.localeCompare(b.name);
@@ -15,7 +16,6 @@ export default function ItemList({ items }) {
   });
 
   const activeStyle = "bg-white text-black";
-
   const inactiveStyle = "bg-gray-800 text-white hover:bg-gray-700";
 
   return (
@@ -56,7 +56,8 @@ export default function ItemList({ items }) {
           <div key={category} className="mb-6 text-white">
             <h3 className="text-xl font-bold capitalize mb-2">{category}</h3>
             <ul className="list-disc list-inside ml-2">
-              {categoryItems
+              {/* Pro-tip: Spread categoryItems before sorting just to be extra safe in React Strict Mode */}
+              {[...categoryItems]
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((item) => (
                   <Item

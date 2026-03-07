@@ -16,7 +16,6 @@ export default function Page() {
     <main className="bg-black min-h-screen p-8 flex flex-col items-center font-sans">
       <div className="w-full max-w-3xl flex flex-col items-center">
         
-        {/* High contrast uppercase title with a solid white underline */}
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center uppercase tracking-widest border-b-4 border-white pb-2 w-full max-w-sm">
           Shopping List
         </h1>
