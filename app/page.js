@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-export default function Page(){
-  return(
+export default function Page() {
+  return (
     <main>
       <h1>CPRG 306: Web Development 2 - Assignment 2</h1>
       <Link href="/week-2">Week 2</Link>
@@ -11,6 +11,7 @@ export default function Page(){
       <Link href="/week-6">Week 6 </Link>
       <Link href="/week-7">Week 7 </Link>
       <Link href="/week-8">Week 8 </Link>
+      <Link href="/week-9">Week 9 </Link>
     </main>
   )
 }
