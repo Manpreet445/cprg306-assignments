@@ -39,7 +39,7 @@ export default function Page() {
           Shopping List App
         </h1>
       </div>
-      
+
       <div className="bg-black w-full max-w-lg p-8 shadow-xl border border-white flex flex-col items-center">
         {!user ? (
           <>
@@ -58,16 +58,16 @@ export default function Page() {
                 Welcome, {user.displayName} ({user.email})
               </p>
             </div>
-            
+
             <div className="flex flex-col gap-4 w-full">
-              <Link 
-                href="/week-9/shopping-list"
+              <Link
+                href="/week-10/shopping-list"
                 className="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 text-center transition-colors"
               >
                 Go to Shopping List
               </Link>
               <Link
-                href="/week-9/profile"
+                href="/week-10/profile"
                 className="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 text-center transition-colors"
               >
                 View Profile
